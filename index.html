@@ -175,11 +175,11 @@
             </div>
          </div>
       </div>
-      <div class="custom-shape-divider-bottom-1665603929">
+      <!-- <div class="custom-shape-divider-bottom-1665603929">
          <svg style="fill:#ffffff" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
              <path d="M598.97 114.72L0 0 0 120 1200 120 1200 0 598.97 114.72z" class="shape-fill"></path>
          </svg>
-     </div>
+     </div> -->
    </section>
 
 
@@ -205,7 +205,8 @@
 				<div class="portfolio_left">
 					<h5>Horizon Portfolio</h5>
 					<h6>Web Development</h6>
-					<p>Horizon is a free HTML5 website template for portfolios, websites or any kind of project where you want to showcase your work. The template is fully responsive, it has an easy navigation menu and a clean design. You can choose between two different color schemes - light and dark. </p> <a class="button-5" href="#!"> See Live </a> <a rel="noreferrer" target="_blank" class="button-6 no_demo" href="https://github.com/cbarnett427/Horizon-Portfolio"> Source Code </a> </div>
+					<p>Horizon is a free HTML5 website template for portfolios, websites or any kind of project where you want to showcase your work. The template is fully responsive, it has an easy navigation menu and a clean design. You can choose between two different color schemes - light and dark. </p>
+               <a class="button-5" href="https://cbarnett427.github.io/Horizon-Portfolio/"> See Live </a> <a rel="noreferrer" target="_blank" class="button-6" href="https://github.com/cbarnett427/Horizon-Portfolio"> Source Code </a> </div>
 				<div class="portfolio_right"> <img src="img/HorizonExample.png" alt="" /> </div>
 			</div>
 			<div class="portfolio_row reveal">
@@ -215,32 +216,61 @@
 					<h6>Software Development</h6>
 					<p>Simplify browsing and enjoy a truly clean, safe and unique experience with Pyxify, a Python-based web browser. Pyxify is equipped with a fully responsive landing page, new tab page, quick links and the current time. Runs on any python compatible operating system. Fully responsive UI for an engaging conversation experience. </p> <a class="button-5" href="#!"> See Live </a> <a rel="noreferrer" target="_blank" class="button-6" href="https://github.com/cbarnett427/Pyxify-Web-Browser"> Source Code </a> </div>
 			</div>
-         <div class="custom-shape-divider-bottom">
-            <svg style="fill:#f6f7fa" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-                <path d="M598.97 114.72L0 0 0 120 1200 120 1200 0 598.97 114.72z" class="shape-fill"></path>
-            </svg>
-        </div>
 	</section>
 
-   
-   <section id="contact">
-      <div class="container">
-      <h4>Contact</i></h4>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor aliquam earum incidunt fugiat illo quasi
-         quidem, voluptatem totam repellendus autem, sint iste sapiente, in corporis ut accusantium aspernatur
-         quam adipisci id perferendis laboriosam quibusdam tempora harum quos eius soluta enim, quisquam molestiae?
-         Inventore, sunt similique.</p>
+
+   <section class="reveal" id="contact">
+      <div class="container reveal">
+         <div class="contactform">
+            <h4>Contact</h4>
+            <p>Feel free to drop me a message below!</p>
+            <form action="email.php" method="post" name="contactform">
+
+               <div class="textfield-outlined">
+                  <input maxlength="50" name="first_name" id="input-one" size="30" type="text" required placeholder=" ">
+                  <label for="input-one">Name</label>
+               </div>
+  
+               <div class="textfield-outlined">
+                  <input maxlength="30" name="telephone" id="input-two" size="30" type="text" required placeholder=" ">
+                  <label for="input-two">Phone</label>
+               </div>
+               
+               <div class="textfield-outlined">
+                  <input maxlength="80" name="email" id="input-three" size="30" type="email" required  placeholder=" ">
+                  <label for="input-three">Email</label>
+               </div>
+                 
+               <div class="textfield-outlined">
+                  <textarea id="input-four" cols="30" rows="6" maxlength="1000" name="comments" required placeholder=" "></textarea>
+                  <label for="input-four">Message</label>
+               </div>
+               
+               <p><input type="submit" value="Send Message" /></p>
+                
+               </form>
+      </div>
       </div>
    </section>
-   <section id="footer">
-      <div class="container">
-      <h4>Footer</h4>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor aliquam earum incidunt fugiat illo quasi
-         quidem, voluptatem totam repellendus autem, sint iste sapiente, in corporis ut accusantium aspernatur
-         quam adipisci id perferendis laboriosam quibusdam tempora harum quos eius soluta enim, quisquam molestiae?
-         Inventore, sunt similique.</p>
+   <footer class="footer-distributed container">
+
+      <div class="footer-right">
+         <a href="https://www.linkedin.com/in/clayton-barnett2020/" target="_blank" rel="noopener noreferrer" id="linkedin"><i class="fa-brands fa-linkedin-in"></i></a>
+         <a href="https://github.com/cbarnett427" target="_blank" rel="noopener noreferrer" id="github"><i class="fa-brands fa-github"></i></a>
+         <a href="https://twitter.com/cbarnett427" target="_blank" rel="noopener noreferrer" id="twitter"><i class="fa-brands fa-twitter"></i></a>
+         <p id="WithLove">Made with <i class="fa-solid fa-heart"></i></p>
       </div>
-   </section>
+
+      <div class="footer-left">
+         <p class="footer-links">
+            <a class="link-1" href="#home">HOME</a>
+            <a href="#about">ABOUT</a>
+            <a href="#portfolio">PORTFOLIO</a>
+            <a href="#resume">RESUME</a>
+         </p>
+         <p>BRAND &copy; 2022</p>
+      </div>
+   </footer>
 </body>
 
 </html>
