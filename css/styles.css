@@ -228,7 +228,7 @@ section {
 	
 	display: block;
 	background-image: linear-gradient(rgba(0, 0, 0, .10),rgba(0, 0, 0, .10)),
-    url('/img/Capture1.png');
+    url('../img/Capture1.png');
 	background-repeat: no-repeat;
 	background-position: center;
   	height: 100%;
