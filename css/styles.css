@@ -283,6 +283,25 @@ section {
 	-ms-filter: blur(1px);
 	filter: blur(1px);
 }
+#contact-btn {
+	background-color: rgba(63,63,70, 0.1);
+	color: var(--color-black);
+	border-radius: 3px;
+	padding: 6px;
+	margin-left: calc(1.5rem - 6px);
+	margin-top: calc(1rem - 6px);
+	margin-bottom: calc(1rem - 6px);
+}
+#contact-btn:active,
+#contact-btn:hover {
+	background-color: var(--color-black);
+	color: var(--color-white);
+	border-radius: 3px;
+	padding: 6px;
+	margin-left: calc(1.5rem - 6px);
+	margin-top: calc(1rem - 6px);
+	margin-bottom: calc(1rem - 6px);
+}
 #services {
   background: var(--color-offwhite);
 }
@@ -331,8 +350,9 @@ section {
 
 .nav-menu .nav-item .nav-link {
   display: inline-block;
-  padding: 1rem 0 1rem 1.5rem;
+  margin: 1rem 0 1rem 1.5rem;
   width: 100%;
+  max-width: fit-content;
   transition: all 0.3s ease;
 }
 
@@ -477,6 +497,11 @@ section {
 	margin: 0 0 1.6rem 0;
 	line-height: 1.8;
 	text-align: justify;
+	position: relative;
+    top: 25%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
 }
 
 .about a {
@@ -521,6 +546,12 @@ section {
 	}
 	.about_left {
 		margin-bottom: 2rem;
+	}
+	.about_row p {
+		top: 0;
+		-webkit-transform: none;
+		-ms-transform: none;
+		transform: none;
 	}
 }
 
